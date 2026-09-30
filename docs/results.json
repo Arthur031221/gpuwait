@@ -1,0 +1,1438 @@
+{
+  "tool": "gpuwait",
+  "version": "0.1.0",
+  "generated_at": "2026-09-30T08:12:40.933406+00:00",
+  "target": "http://localhost:11434",
+  "model": "qwen3:4b",
+  "headline_idle_percent": 38.5,
+  "levels": [
+    {
+      "concurrency": 1,
+      "duration_s": 60.005109916906804,
+      "think_time_s": 2.0,
+      "idle_percent": 38.5,
+      "busy_percent": 61.5,
+      "sample_count": 121,
+      "requests_ok": 12,
+      "requests_failed": 0,
+      "throughput_tok_s": 25.6,
+      "p50_latency_s": 3.097,
+      "p95_latency_s": 3.262,
+      "mean_ttft_s": 0.046,
+      "sampler_mode": "ollama-timing",
+      "sampler_reason": "no passwordless sudo for powermetrics, falling back to request-timing inference (run `sudo visudo` to add a NOPASSWD rule for powermetrics if you want hardware samples instead)",
+      "sampler_notes": [
+        "busy means at least one HTTP request was in flight, idle means zero were",
+        "cannot see GPU activity inside a single request, only whether one was outstanding"
+      ],
+      "samples": [
+        {
+          "t": 0.0,
+          "busy_pct": 99.0
+        },
+        {
+          "t": 0.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 1.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 1.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 2.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 2.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 3.0,
+          "busy_pct": 25.2
+        },
+        {
+          "t": 3.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 4.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 4.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 5.0,
+          "busy_pct": 74.5
+        },
+        {
+          "t": 5.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 6.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 6.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 7.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 7.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 8.0,
+          "busy_pct": 44.8
+        },
+        {
+          "t": 8.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 9.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 9.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 10.0,
+          "busy_pct": 55.0
+        },
+        {
+          "t": 10.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 11.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 11.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 12.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 12.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 13.0,
+          "busy_pct": 74.6
+        },
+        {
+          "t": 13.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 14.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 14.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 15.0,
+          "busy_pct": 25.2
+        },
+        {
+          "t": 15.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 16.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 16.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 17.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 17.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 18.0,
+          "busy_pct": 82.6
+        },
+        {
+          "t": 18.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 19.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 19.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 20.0,
+          "busy_pct": 17.3
+        },
+        {
+          "t": 20.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 21.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 21.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 22.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 22.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 23.0,
+          "busy_pct": 85.0
+        },
+        {
+          "t": 23.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 24.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 24.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 25.0,
+          "busy_pct": 14.7
+        },
+        {
+          "t": 25.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 26.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 26.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 27.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 27.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 28.0,
+          "busy_pct": 86.1
+        },
+        {
+          "t": 28.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 29.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 29.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 30.0,
+          "busy_pct": 13.6
+        },
+        {
+          "t": 30.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 31.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 31.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 32.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 32.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 33.0,
+          "busy_pct": 89.5
+        },
+        {
+          "t": 33.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 34.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 34.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 35.0,
+          "busy_pct": 10.3
+        },
+        {
+          "t": 35.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 36.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 36.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 37.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 37.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 38.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 38.5,
+          "busy_pct": 5.3
+        },
+        {
+          "t": 39.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 39.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 40.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 40.5,
+          "busy_pct": 94.7
+        },
+        {
+          "t": 41.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 41.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 42.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 42.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 43.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 43.5,
+          "busy_pct": 12.5
+        },
+        {
+          "t": 44.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 44.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 45.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 45.5,
+          "busy_pct": 87.3
+        },
+        {
+          "t": 46.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 46.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 47.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 47.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 48.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 48.5,
+          "busy_pct": 44.1
+        },
+        {
+          "t": 49.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 49.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 50.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 50.5,
+          "busy_pct": 55.7
+        },
+        {
+          "t": 51.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 51.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 52.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 52.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 53.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 53.5,
+          "busy_pct": 96.7
+        },
+        {
+          "t": 54.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 54.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 55.0,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 55.5,
+          "busy_pct": 3.1
+        },
+        {
+          "t": 56.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 56.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 57.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 57.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 58.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 58.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 59.0,
+          "busy_pct": 45.8
+        },
+        {
+          "t": 59.5,
+          "busy_pct": 0.0
+        },
+        {
+          "t": 60.0,
+          "busy_pct": 0.0
+        }
+      ]
+    },
+    {
+      "concurrency": 16,
+      "duration_s": 112.12587145902216,
+      "think_time_s": 2.0,
+      "idle_percent": 0.0,
+      "busy_percent": 100.0,
+      "sample_count": 225,
+      "requests_ok": 34,
+      "requests_failed": 0,
+      "throughput_tok_s": 38.8,
+      "p50_latency_s": 47.632,
+      "p95_latency_s": 53.38,
+      "mean_ttft_s": 35.311,
+      "sampler_mode": "ollama-timing",
+      "sampler_reason": "no passwordless sudo for powermetrics, falling back to request-timing inference (run `sudo visudo` to add a NOPASSWD rule for powermetrics if you want hardware samples instead)",
+      "sampler_notes": [
+        "busy means at least one HTTP request was in flight, idle means zero were",
+        "cannot see GPU activity inside a single request, only whether one was outstanding"
+      ],
+      "samples": [
+        {
+          "t": 0.0,
+          "busy_pct": 95.6
+        },
+        {
+          "t": 0.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 1.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 1.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 2.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 2.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 3.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 3.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 4.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 4.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 5.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 5.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 6.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 6.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 7.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 7.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 8.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 8.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 9.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 9.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 10.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 10.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 11.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 11.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 12.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 12.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 13.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 13.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 14.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 14.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 15.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 15.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 16.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 16.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 17.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 17.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 18.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 18.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 19.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 19.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 20.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 20.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 21.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 21.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 22.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 22.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 23.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 23.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 24.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 24.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 25.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 25.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 26.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 26.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 27.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 27.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 28.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 28.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 29.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 29.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 30.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 30.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 31.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 31.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 32.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 32.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 33.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 33.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 34.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 34.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 35.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 35.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 36.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 36.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 37.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 37.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 38.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 38.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 39.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 39.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 40.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 40.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 41.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 41.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 42.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 42.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 43.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 43.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 44.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 44.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 45.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 45.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 46.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 46.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 47.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 47.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 48.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 48.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 49.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 49.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 50.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 50.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 51.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 51.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 52.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 52.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 53.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 53.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 54.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 54.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 55.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 55.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 56.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 56.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 57.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 57.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 58.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 58.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 59.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 59.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 60.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 60.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 61.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 61.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 62.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 62.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 63.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 63.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 64.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 64.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 65.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 65.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 66.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 66.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 67.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 67.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 68.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 68.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 69.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 69.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 70.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 70.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 71.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 71.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 72.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 72.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 73.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 73.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 74.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 74.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 75.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 75.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 76.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 76.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 77.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 77.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 78.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 78.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 79.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 79.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 80.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 80.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 81.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 81.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 82.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 82.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 83.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 83.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 84.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 84.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 85.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 85.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 86.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 86.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 87.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 87.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 88.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 88.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 89.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 89.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 90.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 90.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 91.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 91.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 92.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 92.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 93.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 93.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 94.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 94.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 95.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 95.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 96.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 96.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 97.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 97.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 98.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 98.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 99.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 99.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 100.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 100.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 101.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 101.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 102.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 102.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 103.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 103.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 104.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 104.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 105.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 105.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 106.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 106.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 107.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 107.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 108.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 108.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 109.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 109.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 110.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 110.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 111.0,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 111.5,
+          "busy_pct": 100.0
+        },
+        {
+          "t": 112.0,
+          "busy_pct": 99.8
+        }
+      ]
+    }
+  ]
+}
