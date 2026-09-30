@@ -188,6 +188,12 @@ gpuwait <base_url> [options]
 - **What does it not do?** It does not replace your serving stack, change server settings for
   you, or support multi-GPU attribution. It reports one endpoint's idle time, nothing more.
 
+## Related projects
+
+- [gpuwho](https://github.com/Arthur031221/gpuwho): Shows which process is on the GPU right now. gpuwait shows how idle the GPU sits across a request window.
+- [llm-doctor](https://github.com/Arthur031221/llm-doctor): A broader diagnostic for the same local serving setup gpuwait measures the concurrency behavior of.
+- [mlxtrace](https://github.com/Arthur031221/mlxtrace): Samples power and memory per MLX training step, a narrower measurement than gpuwait's request-level idle time.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). Issues and pull requests welcome.
