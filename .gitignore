@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.python-version
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+# Only the default local-run output in the repo root, not the committed
+# example report under docs/ that GitHub Pages serves.
+/report.html
+/badge.svg
+*.log
+.DS_Store
