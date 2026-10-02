@@ -5,6 +5,8 @@ hardware sampler is available, gpuwait reports GPU idle time. Otherwise it
 reports the fraction of time with no request in flight, labeled Request Idle
 Score. That proxy does not measure GPU activity inside a request.
 
+![gpuwait terminal help showing request replay options for local LLM servers](demo/demo.gif)
+
 On this machine, serving Ollama `qwen3:4b` at concurrency 1, the server sat idle (Request Idle
 Score, no request in flight) **38.5** percent of a 60 second window. At concurrency 16 that
 dropped to **0.0** percent, and p50 request latency rose from 3.1s to 47.6s.
@@ -13,8 +15,6 @@ Method: request-timing sampler, measured 2026-09-30, see [Measured numbers](#mea
 ![CI](https://github.com/Arthur031221/gpuwait/actions/workflows/ci.yml/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)
-
-![gpuwait demo](demo/demo.gif)
 
 ## Why
 
