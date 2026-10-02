@@ -83,6 +83,25 @@ async def test_reasoning_only_stream_is_not_reported_as_zero_tokens():
     assert tokens == 3
 
 
+async def test_legacy_vllm_reasoning_content_stream_counts_tokens():
+    body = _sse(
+        {"choices": [{"delta": {"reasoning_content": "We should"}}]},
+        {"choices": [{"delta": {"reasoning_content": " think"}}]},
+        {"choices": [{"delta": {}, "finish_reason": "length"}]},
+    )
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        return httpx.Response(200, content=body)
+
+    async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
+        ttft, tokens = await send_chat_request(
+            client, "http://mock/v1/chat/completions", "m", "prompt", 32, True
+        )
+
+    assert ttft is not None
+    assert tokens == 2
+
+
 async def test_streaming_usage_in_final_chunk_overrides_chunk_count():
     body = _sse(
         {"choices": [{"delta": {"content": "a"}}]},

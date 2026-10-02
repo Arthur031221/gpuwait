@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Count streamed reasoning output from vLLM's legacy `reasoning_content` field toward TTFT and
+  throughput.
+
 ## 0.1.0
 
 Initial release.

@@ -120,12 +120,14 @@ async def _send_streaming(
             if choices:
                 delta = choices[0].get("delta") or {}
                 # A reasoning model (Qwen3 in thinking mode, among others) streams its
-                # thinking as delta.reasoning with delta.content held at "" until the
+                # thinking as delta.reasoning (or the older vLLM field
+                # delta.reasoning_content) with delta.content held at "" until the
                 # visible answer starts, sometimes for the entire response if max_tokens
                 # is reached first. Reasoning tokens are still real GPU work, so we count
                 # them the same as content tokens for time-to-first-token and the
                 # chunk-count throughput proxy, instead of reporting a false zero.
-                if delta.get("content") or delta.get("reasoning"):
+                has_reasoning = delta.get("reasoning") or delta.get("reasoning_content")
+                if delta.get("content") or has_reasoning:
                     if ttft is None:
                         ttft = time.monotonic() - t_start
                     chunk_count += 1
