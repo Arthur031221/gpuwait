@@ -145,3 +145,32 @@ async def test_non_streaming_reasoning_model_uses_usage_not_empty_content():
 
     assert ttft is None  # non-streaming never has a meaningful time-to-first-token
     assert tokens == 40
+
+
+@pytest.mark.parametrize("reasoning_field", ["reasoning", "reasoning_content"])
+async def test_non_streaming_reasoning_fallback_counts_text_without_usage(reasoning_field: str):
+    """When a server omits usage, include hidden reasoning in the word-count estimate."""
+    reasoning = "First inspect the request. Then adjust the timeout and retry."
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        return httpx.Response(
+            200,
+            json={
+                "choices": [
+                    {
+                        "message": {
+                            "role": "assistant",
+                            "content": "",
+                            reasoning_field: reasoning,
+                        }
+                    }
+                ]
+            },
+        )
+
+    async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
+        _ttft, tokens = await send_chat_request(
+            client, "http://mock/v1/chat/completions", "m", "prompt", 40, False
+        )
+
+    assert tokens == len(reasoning.split())

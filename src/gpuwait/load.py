@@ -89,8 +89,11 @@ async def send_chat_request(
     tokens = usage.get("completion_tokens")
     if tokens is None:
         choices = body.get("choices") or [{}]
-        content = (choices[0].get("message") or {}).get("content", "")
-        tokens = max(len(content.split()), 1)
+        message = choices[0].get("message") or {}
+        output_text = " ".join(
+            message.get(field) or "" for field in ("content", "reasoning", "reasoning_content")
+        )
+        tokens = max(len(output_text.split()), 1)
     return None, int(tokens)
 
 

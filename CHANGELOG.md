@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Include non-streamed reasoning text in the output estimate when a server omits token usage.
 - Count streamed reasoning output from vLLM's legacy `reasoning_content` field toward TTFT and
   throughput.
 
